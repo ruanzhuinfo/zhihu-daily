@@ -1,0 +1,32 @@
+<!--pages/home/home.wxml-->
+
+<!--banner-->
+<swiper autoplay="true" indicator-dots="true"  indicator-active-color="#fff" circular="true">
+    <block wx:for="{{top_stories}}">
+        <swiper-item bindtap="tapItem" id="{{item.id}}">
+            <image class="slide-image" mode="aspectFill" src="http://pic1.zhimg.com/36d20c1bb5d488bb1c0abb06bba62d08.jpg" />
+                <view class="mask-view">
+                    <text class="slide-text">{{item.title}}</text>
+                </view>
+        </swiper-item>
+    </block>
+</swiper>
+
+<!--列表-->
+<block wx:for="{{stories}}">
+    <view id="{{item.id}}" class="item-container" bindtap="tapItem">
+        <view class="item-left">
+            <text class="item-title">{{item.title}}</text>
+        </view>
+        <view >
+            <image class="item-right" model="aspectFill" src="../../images/image_placeholder.png" />
+        </view>
+    </view>
+    <view class="item-line"></view>
+</block>
+<view class="items-loading">
+    <text>{{loading_text}}</text>
+</view>
+
+ 
+

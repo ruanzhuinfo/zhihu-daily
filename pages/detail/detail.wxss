@@ -1,0 +1,17 @@
+@import "../../wxParse/wxParse.wxss";
+@import "content.wxss";
+
+.wxParse-p {
+    overflow: hidden;
+}
+
+.items-loading {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 11pt;
+    color: #888;
+    overflow: hidden;
+}

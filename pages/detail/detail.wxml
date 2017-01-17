@@ -1,0 +1,9 @@
+<import src="../../wxParse/wxParse.wxml"/> 
+<view class="wxParse">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+
+<!--loading-->
+<view class="items-loading" style="height:{{loading_height}}px;">
+    <text>加载中...</text>
+</view>
