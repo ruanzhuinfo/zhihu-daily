@@ -1,8 +1,14 @@
 {
   "name": "zhihu-daily",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "app.js",
+  "dependencies": {
+    "cz-conventional-changelog": "^1.2.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^1.2.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
@@ -18,29 +24,9 @@
     "url": "https://github.com/fantengfei/zhihu-daily/issues"
   },
   "homepage": "https://github.com/fantengfei/zhihu-daily#readme",
-  "devDependencies": {
-    "cz-conventional-changelog": "^1.2.0"
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
-    },
-    "validate-commit-msg": {
-      "helpMessage": "\nPlease fix your commit message (and consider using http://npm.im/commitizen)\n",
-      "types": [
-        "feat",
-        "fix",
-        "docs",
-        "style",
-        "refactor",
-        "perf",
-        "test",
-        "chore",
-        "revert",
-        "custom"
-      ],
-      "warnOnFail": false,
-      "autoFix": false
     }
   }
 }
