@@ -24,6 +24,9 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "commit-msg": "./node_modules/validate-commit-msg.js"
     }
   }
 }
